@@ -12,10 +12,11 @@
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h2 id="hometext" class="font-weight-bold">Hello, my name is Amit Tiwari. 
-      I am a software engineer and live in Germany. Please click the image
-       below to see my work</h2>
+    <h3 class="font-weight-bold">Hello, my name is Amit Tiwari. 
+      I am a software engineer and live in Germany. Please click the images
+       below to see my work.</h3>
   </div>
+  <!-- id="hometext"  -->
 </div>
 
 <h2 class="mt-5">Portfolio</h2>
@@ -32,7 +33,7 @@
 
     <img src="{{ project.image.url }}" class="img-fluid mb-2">
     {% endif %}
-    <h3>{{ project.title }}</h3>
+    <a href="{{project.url}}" >  <h3>{{ project.title }}</h3></a>
     <p>{{ project.description }}</p>
 
   </div>
